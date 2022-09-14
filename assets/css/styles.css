@@ -58,10 +58,52 @@
 }
 
 /*=============== BASE ===============*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+html{
+  scroll-behavior: smooth;
+}
 
+body,
+button,
+input,
+textarea{
+  font-family: var(--body-font);
+  font-size: var(--normal-fonr-size);
+}
 
+body{
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
 
+h1,h2,h3{
+ color: var(--title-color);
+ font-weight: var(--font-semibold);
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
 /*=============== HEADER & NAV===============*/
 
 
