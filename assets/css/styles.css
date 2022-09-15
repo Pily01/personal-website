@@ -263,6 +263,8 @@ img{
   gap: 1.5rem;
 }
 
+/*  ------- Social ------- */
+
 .home__social,
 .home__scroll{
   position: absolute;
@@ -298,6 +300,8 @@ img{
   background-color: var(--first-color);
   transform: rotate(90deg) translate(16px, 3px);
 }
+
+/*  ------- Scroll ------- */
 
 .home__scroll{
   color: var(--first-color);
