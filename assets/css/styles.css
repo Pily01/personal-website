@@ -321,6 +321,15 @@ img{
   transform: rotate(-90deg);
 }
 
+.home__scroll-icon:hover,
+.home__scroll-name:hover{
+  background-color: var(--first-color);
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+
 /* //////////////////// B U T T O N S //////////////////// */
 
 .button{
@@ -371,4 +380,18 @@ img{
   background-color: var(--container-color);
   border-radius: .75rem;
   padding: .75rem .5rem;
+}
+
+.about__icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+
+.about__title{
+  font-size: var(--small-font-size);
+}
+
+.about__subtitle{
+  font-size: var(--smaller-font-size);
 }
