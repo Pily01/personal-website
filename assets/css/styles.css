@@ -196,13 +196,21 @@ img{
   padding: .4rem;
   display: flex;
   border-radius: 5rem;
+  transition: 0.25s;
+}
+
+.nav__link:hover{
+  color: hsl(71, 86%, 49%);
 }
 
 /*  ------- Active Links ------- */
 .active-link{
-  background: linear-gradient(180deg, hsla(var(--first-hue), var(--sat), var(--lig),1),
-  hsla(var(--first-hue), var(--sat), var(--lig),.2));
+  background: hsl(71, 86%, 49%);
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig),.2);
+  color: var(--body-color);
+}
+
+.nav__link.active-link:hover{
   color: var(--body-color);
 }
 
@@ -455,3 +463,67 @@ img{
 .skills__level{
   font-size: var(--tiny-font-size);
 }
+
+/* //////////////////// W O R K //////////////////// */
+
+.work__container{
+  padding-top: 1rem;
+}
+
+.work__filters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .75rem;
+  margin-bottom: 2rem;
+}
+
+.work__item{
+  cursor: pointer;
+  color: var(--title-color);
+  padding: .25rem .75rem;
+  font-weight: var(--font-medium);
+  border-radius: .5rem;
+}
+
+.work__card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.work__img{
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+}
+
+.work__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+
+.work__button{
+  width: max-content;
+  color: var(--first-color);
+  font-size: var(--font-medium);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.work__button:hover .work__icon {
+  transform: translateX(.25rem);
+}
+
+.work__icon{
+  font-size: 1.2rem;
+  transition: 0.4s;
+}
+
+.active-work{
+  background-color: var(--first-color);
+  color: var(--body-color);
+}
+
+
