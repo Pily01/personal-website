@@ -623,8 +623,47 @@ img{
 }
 
 
+/* //////////////////// B R E A K P O I N T S //////////////////// */
 
+/* Small Devices */
+@media screen and (max-width: 320px){
+  .nav__menu{
+    padding: 1rem 1.5rem;
+  }
 
+  .home__buttons{
+    flex-direction: column;
+  }
+
+  .home__handle{
+    width: 150px;
+    height: 253px;
+  }
+
+  .home__img{
+    width: 130px;
+  }
+
+  .about__info{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills__box{
+    column-gap: 1rem;
+  }
+
+  .skills__name{
+    font-size: var(--small-font-size);
+  }
+
+  .work__item{
+    font-size: var(--small-font-size);
+  }
+  .work__filters{
+    column-gap: .25rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 
 
