@@ -665,7 +665,51 @@ img{
   }
 }
 
+/* For Medium Devices */
+@media screen and (min-width: 575px) {
+  .nav__menu{
+    width: 328px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 
+  .about__info{
+    grid-template-columns: repeat(3, 140px);
+    justify-content: center;
+  }
+
+  .about__description{
+    padding: 0 5rem;
+  }
+
+  .skills__container{
+    justify-content: center;
+  }
+
+  .skills__content{
+    padding: 2rem 4rem;
+  }
+
+  .work__container{
+    justify-content: center;
+  }
+
+  .work__img{
+    width: 295px;
+  }
+
+  .contact__info{
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width:767px){
+  .work__container{
+    grid-template-columns: repeat(2, max-content);
+  }
+}
 
 
 
