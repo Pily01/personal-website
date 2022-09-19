@@ -19,7 +19,7 @@ function changeActive(){
 
 linkWork.forEach(link => link.addEventListener("click", changeActive));
 
-/* S C R O L L  R E V E A L */
+/* S C R O L L  A C T I V E */
  
 const sections = document.querySelectorAll('section[id]')
     
@@ -40,3 +40,16 @@ const scrollActive = () =>{
 	})
 }
 window.addEventListener('scroll', scrollActive)
+
+/* S C R O L L  R E V E A L */
+
+const sr = ScrollReveal({
+	origin: 'top',
+	distance:'60px',
+	duration: 2500,
+	delay: 400,
+})
+
+sr.reveal(`.home__data`);
+sr.reveal(`.home__handle`, {delay: 700});
+sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin:'bottom'})
